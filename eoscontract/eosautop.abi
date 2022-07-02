@@ -1,0 +1,240 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "autopowerup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "receiver",
+                    "type": "name"
+                },
+                {
+                    "name": "net_frac",
+                    "type": "uint64"
+                },
+                {
+                    "name": "cpu_frac",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_payment",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "billaccount",
+            "base": "",
+            "fields": [
+                {
+                    "name": "receiver",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cusers",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "users",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "getfee",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "pconfig2",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "min_cpu",
+                    "type": "uint64"
+                },
+                {
+                    "name": "cpu_amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_net",
+                    "type": "uint64"
+                },
+                {
+                    "name": "net_amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "open",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "puser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "setconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "min_cpu",
+                    "type": "uint64"
+                },
+                {
+                    "name": "cpu_amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_net",
+                    "type": "uint64"
+                },
+                {
+                    "name": "net_amount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "open",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setusers",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "users",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "state",
+            "base": "",
+            "fields": [
+                {
+                    "name": "contract",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "autopowerup",
+            "type": "autopowerup",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "billaccount",
+            "type": "billaccount",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "getfee",
+            "type": "getfee",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setconfig",
+            "type": "setconfig",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setusers",
+            "type": "setusers",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "cusers",
+            "type": "cusers",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "pconfig2",
+            "type": "pconfig2",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "puser",
+            "type": "puser",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "state",
+            "type": "state",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
